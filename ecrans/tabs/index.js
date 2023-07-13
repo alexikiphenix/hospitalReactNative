@@ -8,12 +8,13 @@ const BottomTabs = () => {
   const Tab = createBottomTabNavigator();
   return (
     <Tab.Navigator
-      initialRouteName="home"
+      initialRouteName="tabs_home"
       screenOptions={{
         tabBarActiveTintColor: '#e91e63',
+        headerShown: false,
       }}>
       <Tab.Screen
-        name="Feed"
+        name="tabs_home"
         component={Home}
         options={{
           tabBarLabel: 'Home',
@@ -23,7 +24,7 @@ const BottomTabs = () => {
         }}
       />
       <Tab.Screen
-        name="Notifications"
+        name="tabs_home2"
         component={Home}
         options={{
           tabBarLabel: 'Updates',
@@ -34,7 +35,7 @@ const BottomTabs = () => {
         }}
       />
       <Tab.Screen
-        name="Profile"
+        name="tabs_home3"
         component={Home}
         options={{
           tabBarLabel: 'Profile',
