@@ -1,11 +1,11 @@
-import {View, Text} from 'react-native';
+import {Text} from 'react-native';
 import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Home from '../Home';
+import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 
 const BottomTabs = () => {
-  const Tab = createBottomTabNavigator();
+  const Tab = createMaterialBottomTabNavigator();
   return (
     <Tab.Navigator
       initialRouteName="tabs_home"
@@ -17,8 +17,9 @@ const BottomTabs = () => {
         name="tabs_home"
         component={Home}
         options={{
-          tabBarLabel: 'Home',
-          tabBarIcon: ({ color, size }) => (
+          tabBarLabel: 'Dashboard',
+          // eslint-disable-next-line react/no-unstable-nested-components
+          tabBarIcon: ({color, size}) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
           ),
         }}
@@ -27,20 +28,26 @@ const BottomTabs = () => {
         name="tabs_home2"
         component={Home}
         options={{
-          tabBarLabel: 'Updates',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="bell" color={color} size={size} />
+          tabBarLabel: 'Messages',
+          // eslint-disable-next-line react/no-unstable-nested-components
+          tabBarIcon: ({color, size}) => (
+            <MaterialCommunityIcons name="chat" color={color} size={size} />
           ),
-          tabBarBadge: 3,
+          // tabBarBadge: 1,
         }}
       />
       <Tab.Screen
         name="tabs_home3"
         component={Home}
         options={{
-          tabBarLabel: 'Profile',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="account" color={color} size={size} />
+          tabBarLabel: 'Paramètres',
+          // eslint-disable-next-line react/no-unstable-nested-components
+          tabBarIcon: ({color, size}) => (
+            <MaterialCommunityIcons
+              name="account-settings-outline"
+              color={color}
+              size={size}
+            />
           ),
         }}
       />

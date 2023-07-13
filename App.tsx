@@ -1,12 +1,12 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 import Routes from './routes';
 
 const App = (): JSX.Element => {
   return (
+    // eslint-disable-next-line react-native/no-inline-styles
     <View style={{flex: 1}}>
       <Routes />
-      <Text>Afficher un texte d App</Text>
     </View>
   );
 };
