@@ -4,6 +4,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Home from '../Home';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import Messages from '../messages';
+import Settings from '../Setting';
 
 const BottomTabs = () => {
   const Tab = createMaterialBottomTabNavigator();
@@ -38,8 +39,8 @@ const BottomTabs = () => {
         }}
       />
       <Tab.Screen
-        name="tabs_home3"
-        component={Home}
+        name="settings"
+        component={Settings}
         options={{
           tabBarLabel: 'Paramètres',
           // eslint-disable-next-line react/no-unstable-nested-components
