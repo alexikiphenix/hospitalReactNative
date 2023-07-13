@@ -3,6 +3,7 @@ import React from 'react';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Home from '../Home';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
+import Messages from '../messages';
 
 const BottomTabs = () => {
   const Tab = createMaterialBottomTabNavigator();
@@ -14,7 +15,7 @@ const BottomTabs = () => {
         headerShown: false,
       }}>
       <Tab.Screen
-        name="tabs_home"
+        name="Notifications"
         component={Home}
         options={{
           tabBarLabel: 'Dashboard',
@@ -25,8 +26,8 @@ const BottomTabs = () => {
         }}
       />
       <Tab.Screen
-        name="tabs_home2"
-        component={Home}
+        name="Messages"
+        component={Messages}
         options={{
           tabBarLabel: 'Messages',
           // eslint-disable-next-line react/no-unstable-nested-components

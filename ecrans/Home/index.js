@@ -4,7 +4,7 @@ import React from 'react';
 const Home = () => {
   return (
     <View>
-      <Text>index</Text>
+      <Text>Accueil - tableau de bord</Text>
     </View>
   );
 };
