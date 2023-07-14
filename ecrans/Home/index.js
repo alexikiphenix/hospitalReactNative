@@ -7,7 +7,7 @@ const Home = () => {
       {/* Début du header */}
       <View>
         <Text>John Doe</Text>
-        <Image source={require('./../../assets/woman_01.jpg')} />
+        <Image style={{width: '100%'}} source={require('./../../assets/woman_01.jpg')} />
       </View>
       {/* Fin du header */}
     </ScrollView>
