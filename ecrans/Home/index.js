@@ -4,10 +4,12 @@ import React from 'react';
 const Home = () => {
   return (
     <ScrollView>
+      {/* Début du header */}
       <View>
         <Text>John Doe</Text>
         <Image source={require('./../../assets/woman_01.jpg')} />
       </View>
+      {/* Fin du header */}
     </ScrollView>
   );
 };
