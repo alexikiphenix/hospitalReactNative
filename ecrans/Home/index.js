@@ -1,11 +1,14 @@
-import {View, Text} from 'react-native';
+import {View, Text, ScrollView, Image} from 'react-native';
 import React from 'react';
 
 const Home = () => {
   return (
-    <View>
-      <Text>Accueil - tableau de bord</Text>
-    </View>
+    <ScrollView>
+      <View>
+        <Text>John Doe</Text>
+        <Image source={require('./../../assets/woman_01.jpg')} />
+      </View>
+    </ScrollView>
   );
 };
 
