@@ -3,6 +3,7 @@ import React from 'react';
 import SVG_HOSPITAL from '../../assets/imgs/svg/undraw_medicine_b-1-ol.svg';
 import dashboardStyles from './style';
 import {FakeActivity} from '../../fakeData/fakeActivity';
+import styles from './style';
 
 const ActivityItem = () => {
   return (
