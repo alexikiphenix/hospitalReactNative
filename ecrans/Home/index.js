@@ -7,7 +7,11 @@ const Home = () => {
       {/* Début du header */}
       <View>
         <Text>John Doe</Text>
-        <Image style={{width: '100%'}} source={require('./../../assets/woman_01.jpg')} />
+        <Image
+          // eslint-disable-next-line react-native/no-inline-styles
+          style={{width: 100, height: 100}}
+          source={require('./../../assets/woman_01.jpg')}
+        />
       </View>
       {/* Fin du header */}
     </ScrollView>
