@@ -10,7 +10,7 @@ const Home = () => {
         <Text>John Doe</Text>
         <Image
           // eslint-disable-next-line react-native/no-inline-styles
-          style={{width: 100, height: 100}}
+          style={{width: 180, height: 180}}
           source={require('./../../assets/woman_01.jpg')}
         />
       </View>
