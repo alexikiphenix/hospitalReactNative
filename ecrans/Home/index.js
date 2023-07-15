@@ -1,4 +1,4 @@
-import {View, Text, ScrollView, Image, FlatList} from 'react-native';
+import {View, Text, ScrollView, Image, FlatList, TouchableOpacity} from 'react-native';
 import React from 'react';
 import dashboardStyles from './style';
 import {FakeActivity} from '../../fakeData/fakeActivity';
@@ -24,9 +24,10 @@ const Home = () => {
         style={dashboardStyles.scrollableList}
         renderItem={({item}) => {
           return (
-            <View>
-              <Text>{item.mainText}</Text>
-            </View>
+            <TouchableOpacity style={dashboardStyles.scrollableListItem}>
+              <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
+              <Text style={dashboardStyles.subText}>{item.subText}</Text>
+            </TouchableOpacity>
           );
         }}
       />

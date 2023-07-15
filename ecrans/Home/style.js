@@ -20,11 +20,26 @@ const dashboardStyles = StyleSheet.create({
   },
   // styliser la Flatlist
   scrollableList: {
-
+    paddingHorizontal: PADDING.horizontal,
+    paddingVertical: PADDING.vertical,
   },
   scrollableListItem: {
-    
-  }
+    flexDirection: 'column',
+    paddingHorizontal: 15,
+    paddingVertical: 15,
+    backgroundColor: 'white',
+    marginRight: 15,
+    elevation: 1, //ombre portée
+  },
+
+  mainText: {
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  subText: {
+    marginTop: 10,
+    fontSize: 12,
+  },
 });
 
 export default dashboardStyles;
