@@ -1,4 +1,11 @@
-import {View, Text, ScrollView, Image, FlatList, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Text,
+  ScrollView,
+  Image,
+  FlatList,
+  TouchableOpacity,
+} from 'react-native';
 import React from 'react';
 import dashboardStyles from './style';
 import {FakeActivity} from '../../fakeData/fakeActivity';
