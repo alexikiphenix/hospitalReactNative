@@ -9,6 +9,7 @@ import {
 import React from 'react';
 import dashboardStyles from './style';
 import {FakeActivity} from '../../fakeData/fakeActivity';
+import SVG_HOSPITAL from '../../assets/imgs/svg/undraw_medicine_b-1-ol.svg';
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
         renderItem={({item}) => {
           return (
             <TouchableOpacity style={dashboardStyles.scrollableListItem}>
+              <SVG_HOSPITAL width={60} height={60} />
               <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
               <Text style={dashboardStyles.subText}>{item.subText}</Text>
             </TouchableOpacity>
