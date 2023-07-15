@@ -9,6 +9,10 @@ const dashboardStyles = StyleSheet.create({
     paddingHorizontal: PADDING.horizontal,
     paddingVertical: PADDING.vertical,
   },
+  userImg: {
+    width: 50,
+    height: 50,
+  },
 });
 
 export default dashboardStyles;
