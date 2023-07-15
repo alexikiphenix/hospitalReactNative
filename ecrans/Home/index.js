@@ -1,6 +1,7 @@
 import {View, Text, ScrollView, Image, FlatList} from 'react-native';
 import React from 'react';
 import dashboardStyles from './style';
+import {FakeActivity} from '../../fakeData/fakeActivity';
 
 const Home = () => {
   return (
@@ -15,7 +16,20 @@ const Home = () => {
       </View>
       {/* Fin du header */}
       {/* Liste des activités */}
-      <FlatList horizontal={true} />
+      <FlatList
+        data={FakeActivity}
+        keyExtractor={item => item.id}
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        style={dashboardStyles.scrollableList}
+        renderItem={({item}) => {
+          return (
+            <View>
+              <Text>{item.mainText}</Text>
+            </View>
+          );
+        }}
+      />
     </ScrollView>
   );
 };

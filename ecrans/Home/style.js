@@ -18,6 +18,13 @@ const dashboardStyles = StyleSheet.create({
   userName: {
     fontSize: 16,
   },
+  // styliser la Flatlist
+  scrollableList: {
+
+  },
+  scrollableListItem: {
+    
+  }
 });
 
 export default dashboardStyles;
