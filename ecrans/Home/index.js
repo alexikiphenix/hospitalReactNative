@@ -9,9 +9,8 @@ const Home = () => {
       <View style={dashboardStyles.header}>
         <Text>John Doe</Text>
         <Image
-          // eslint-disable-next-line react-native/no-inline-styles
-          style={{width: 180, height: 180}}
           source={require('./../../assets/woman_01.jpg')}
+          style={dashboardStyles.userImg}
         />
       </View>
       {/* Fin du header */}
