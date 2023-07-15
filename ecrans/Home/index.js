@@ -31,13 +31,13 @@ const Home = () => {
         showsHorizontalScrollIndicator={false}
         style={dashboardStyles.scrollableList}
         renderItem={({item}) => {
-          return (
-            <TouchableOpacity style={dashboardStyles.scrollableListItem}>
-              <SVG_HOSPITAL width={60} height={60} />
-              <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
-              <Text style={dashboardStyles.subText}>{item.subText}</Text>
-            </TouchableOpacity>
-          );
+          // return (
+          //   <TouchableOpacity style={dashboardStyles.scrollableListItem}>
+          //     <SVG_HOSPITAL width={60} height={60} />
+          //     <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
+          //     <Text style={dashboardStyles.subText}>{item.subText}</Text>
+          //   </TouchableOpacity>
+          // );
         }}
       />
     </ScrollView>

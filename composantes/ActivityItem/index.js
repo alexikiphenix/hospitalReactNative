@@ -6,10 +6,10 @@ import {FakeActivity} from '../../fakeData/fakeActivity';
 
 const ActivityItem = () => {
   return (
-    <TouchableOpacity style={dashboardStyles.scrollableListItem}>
+    <TouchableOpacity style={styles.scrollableListItem}>
       <SVG_HOSPITAL width={60} height={60} />
-      <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
-      <Text style={dashboardStyles.subText}>{item.subText}</Text>
+      <Text style={styles.mainText}>{item.mainText}</Text>
+      <Text style={styles.subText}>{item.subText}</Text>
     </TouchableOpacity>
   );
 };
