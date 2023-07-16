@@ -82,3 +82,4 @@ To learn more about React Native, take a look at the following resources:
 Home / style.js (BorderRadius : 50/2)
 
 Ce projet est en cours de développement.
+Cette application permets de lister les professionnels de santé.
