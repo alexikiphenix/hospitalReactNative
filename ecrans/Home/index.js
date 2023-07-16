@@ -23,7 +23,7 @@ const Home = () => {
         />
       </View>
       {/* Fin du header */}
-      {/* Liste des activités */}
+      {/* Liste des activités à classer */}
       <FlatList
         data={FakeActivity}
         keyExtractor={item => item.id}
