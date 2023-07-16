@@ -9,8 +9,8 @@ const ActivityItem = () => {
   return (
     <TouchableOpacity style={styles.scrollableListItem}>
       <SVG_HOSPITAL width={60} height={60} />
-      <Text style={styles.mainText}>{item.mainText}</Text>
-      <Text style={styles.subText}>{item.subText}</Text>
+      <Text style={styles.mainText}>{this.mainText}</Text>
+      <Text style={styles.subText}>{this.subText}</Text>
     </TouchableOpacity>
   );
 };
